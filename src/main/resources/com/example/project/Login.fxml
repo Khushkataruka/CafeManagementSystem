@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.LoginController">
+   <children>
+      <Separator layoutX="299.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="4.0" />
+      <AnchorPane fx:id="rightPane" layoutX="294.0" prefHeight="400.0" prefWidth="298.0">
+         <children>
+            <Label alignment="CENTER" layoutY="72.0" prefHeight="46.0" prefWidth="298.0" text="Login" textFill="#1cd6dc">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextfield" layoutX="21.0" layoutY="173.0" prefHeight="26.0" prefWidth="256.0" promptText="Userrname" />
+            <Button fx:id="loginButton" layoutX="62.0" layoutY="286.0" mnemonicParsing="false" onAction="#onClickLoginButton" prefHeight="26.0" prefWidth="173.0" text="Login" />
+            <Hyperlink alignment="CENTER" layoutY="336.0" prefHeight="24.0" prefWidth="305.0" text="Forget Password" />
+            <Label layoutX="135.0" layoutY="369.0" />
+            <Label layoutX="139.0" layoutY="369.0" />
+            <Label layoutX="136.0" layoutY="369.0" />
+            <PasswordField fx:id="passTextfield" layoutX="20.0" layoutY="235.0" prefHeight="26.0" prefWidth="256.0" promptText="Password" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="4.0" layoutY="2.0" prefHeight="400.0" prefWidth="300.0">
+         <children>
+            <Label alignment="CENTER" layoutY="50.0" prefHeight="18.0" prefWidth="300.0" text="Sign Up" textFill="#1cd6dc">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="signupUsernameField" layoutX="22.0" layoutY="113.0" prefWidth="256.0" promptText="Username" />
+            <TextField fx:id="emailField" layoutX="22.0" layoutY="200.0" minWidth="256.0" promptText="Email" />
+            <TextField fx:id="phoneNoField" layoutX="22.0" layoutY="161.0" minWidth="256.0" promptText="Phone no" />
+            <Button fx:id="registerButton" layoutX="62.0" layoutY="287.0" mnemonicParsing="false" onAction="#onClickRegisterButton" prefWidth="176.0" text="Register" />
+            <PasswordField fx:id="signUpPasswordField" layoutX="21.0" layoutY="242.0" minWidth="256.0" prefHeight="26.0" prefWidth="256.0" promptText="Password" />
+            <AnchorPane fx:id="leftPane" layoutX="-1.0" prefHeight="400.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="300.0" layoutX="-1.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../Images/loginimage.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="createButton" layoutX="25.0" layoutY="339.0" mnemonicParsing="false" onAction="#onClickCreateButton" prefHeight="26.0" prefWidth="247.0" text="Create Account" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
